@@ -1,0 +1,134 @@
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+body {
+  background: #eee;
+  font-family: 'Lily Script One';
+  position: relative;
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+.pass-feild i{
+position: absolute;
+top:50%;
+transform: translateY(-50%);
+right: 8;
+}
+.active{
+    display: none;
+}
+.text{
+    width: 530px;
+    height:450;   
+    position: relative; 
+    
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    
+}
+.text .h1{
+    color: #a8b170 !important;
+}
+.text .i{
+    color: #cf9640;
+}
+
+.text h1{
+    font-size: 100px;
+    color: white;
+    margin-top: 0px;
+    padding: 0px;
+    top:0;
+    right: 30px;
+    position: absolute;
+    
+    
+}
+.text .classanimate{
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    
+}
+
+.text h1 .h1{
+    font-size: 140px;
+    color:#cf9640;
+   
+}
+
+.text h1 .s2{
+    
+    font-size: 140px;
+    color:#cf9640;;
+}
+.text  .logo{
+    width: 100px;
+    height: 100px;
+    
+}
+.text  .logo img{
+ width: 100px;
+ border-radius: 50%;
+ position: absolute;
+ top:50px;
+}
+.text p{
+    position: relative;
+    font-size: 30px;
+    color: white;
+    top:60;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    font-weight: bold;
+    word-spacing: 3px;
+
+}
+.text p .icon {
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    bottom:5;
+    right:140;
+    font-size: 35px;
+}
+.main{
+
+    width: 400px;
+    height: 420px;
+    background-color: rgba(255, 255, 255, 0.84);
+    padding: 20px;
+    margin-top: 60px;
+}
+.sumbit,.login{
+    background-color:#cf9640;
+    border:0px;
+    box-shadow: 0 0 0 0.1rem #cf9640
+}
+.sumbit:hover,.login:hover{
+    background-color: white;
+    color: #cf9640 !important;
+}
+
+.form-control:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #cfb040;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #cf9640cd
+}
+.form-floating{
+color: #cf9640;
+}

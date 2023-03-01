@@ -1,0 +1,306 @@
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+body {
+  background: #eee;
+  font-family: 'Lily Script One';
+  position: relative;
+}
+.arrow{
+    width: 50px;
+    height: 50px;
+    background-color: inherit;
+    position:fixed;
+    bottom:3%;
+    right: 2%;
+    z-index: 50;
+    font-size: 40px;
+    
+}
+.arrow i{
+    transform: rotate(133deg);
+    color:#d2aa7a;
+}
+
+.navbar
+{
+    background-color: white !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+.navbar .navbar-nav .active1{
+    color: #a8b170 !important;
+    font-weight: bold;
+}
+.navbar .container .logoimage{
+   width: 50px;
+   height: 50px;
+}
+.navbar .logocol{
+    color: #a8b170;
+    font-size: 40px;
+}
+.navbar .logomain_color{
+    color: #d2aa7a ;
+    font-size: 40px;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+.navbar .nav-link{
+    color:#d2aa7a !important;
+}
+.navbar .nav-link:hover{
+    color:#a8b170 !important;
+}
+
+.navbar  .fav{
+    border: 0px;
+    font-size: 30px;
+}
+.navbar .fav::before{
+    content:attr(data-before);
+    width: 17px;
+    height: 17px;
+    background-color: #d2aa7a;
+    position: absolute;
+    right: 0;
+    top:0;
+    border-radius: 50%;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.navbar .cart{
+ border: 0px;
+ font-size: 30px;
+ 
+}
+.navbar .cart::before{
+    content:attr(data-before);
+    width: 17px;
+    height: 17px;
+    background-color: #d2aa7a;
+    position: absolute;
+    right: 0;
+    top:0;
+    border-radius: 50%;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.section1{
+    width: 100%;
+    height: 500px;
+   
+    background-image:url('../images/pexels-pavel-danilyuk-6407626.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position:right;
+    
+}
+
+.section1{
+    overflow: hidden;
+    position: relative;
+}
+.section1 .overlay{
+    width: 100%;
+    height:100%;
+    background-color: #3a2b115e;
+    position: absolute;
+
+}
+.section1 .texts1{
+    z-index: 100;
+}
+.texts1 div {
+    margin-top: 40px;
+    margin-left: 150px;
+}
+.texts1 div h2{
+    font-size: 80px;
+    color: #d2aa7a;
+}
+.texts1 div h2 span{
+    color: #a8b170;
+}
+.texts1 div p{
+    font-size: 30px;
+    color: #a8b170;
+    word-spacing:4px;
+   
+    text-shadow:2px 0 0 #00000036, 2px -1px 0 #0000001a, 0 1px 0 #0000001c, -1px 0 0 #0000004a;;
+    
+  
+}
+
+.section2 .containerr{
+    width: 80%;
+    margin: auto;
+}
+.section3{
+    margin-top: 100px;
+    color:#a8b170;
+    margin-bottom: 150px;
+}
+.section3 .row .texts3{
+    color: #a8b170;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+
+.section3  .card-title{
+    color:#d2aa7a !important;
+    
+}
+.section3 .card{
+    overflow: hidden;
+}
+.section3 .card:hover{
+    transform: scale(1.2);
+    z-index: 100;
+}
+.section3 .imgdiv{
+    overflow: hidden;
+    height: 220px;
+}
+.section1 .imgdiv img{
+    background-size: cover;
+    width: 100%;
+   
+    overflow: hidden;
+}
+.section3 .imgcard:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.section3 .list-group .list-group-item{
+    color:  #d2aa7a!important;
+    font-size: 25px;
+}
+.section3 .card{
+    position: relative;
+}
+.section3 .card-body{
+    height: 150px;
+}
+.section3 .card-body button{
+    background-color:#a8b170 !important ;
+    color: white;
+}
+.section3 .card-body button:hover{
+    background-color:#1cac78 !important ;
+    color: white;
+}
+
+
+.con_sec8{
+    /* background-image: url('pexels-shvets-production-7195272.jpg'); */
+    background-color: #a8b170;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section8 input{
+    height:70px;
+    color: #d2aa7a !important;
+    border: 0px;
+}
+.section8 textarea{
+    color: #d2aa7a !important ;
+}
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #ca9e5e;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(222, 155, 11, 0.742);
+}
+
+.section8 button{
+    background-color: #d2aa7a!important;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.section8 button:hover{
+    background-color: #9f7541!important;
+    color: white !important;
+}
+.section8 .inputltext{
+    color:#d2aa7a !important;
+}
+
+.section8{
+    margin-bottom: 15rem; 
+}
+
+.footer  {
+    background-color:white;
+    
+}
+.footer .logoimage{
+   width:30px;
+   height: 30px;
+}
+.footer .logocol{
+    color: #a8b170;
+    font-size: 30px;
+}
+.footer .logomain_color{
+    color: #d2aa7a ;
+    font-size: 40px;
+    
+}
+
+.footer .icon_footer{
+    color:#a8b170;
+    font-size: 25px;
+    padding: 10;
+}
+.footer .icon_footer:hover{
+    color: #cf9640;
+}
+.footer p{
+    color: #d2aa7a;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 990px) {
+    .navbar .cart::before{
+      
+        left:25px;
+        top:0px;
+       
+    }
+    .navbar .fav::before{
+        left:25px;
+        top:0px;
+    }
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .section2 .containerr{
+        width: 100% ;
+    }
+    
+  }
+
+  @media only screen and (min-width:992px) and (max-width: 1200px) {
+    .section4 .card-body{
+        height: 170px;
+        padding: 10px;
+    }
+    .section3 .imgdiv{
+        overflow: hidden;
+        height: 180px;
+    }
+    
+  }
+
+

@@ -1,0 +1,831 @@
+
+
+
+
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+body {
+  background: #eee;
+  font-family: 'Lily Script One';
+  position: relative;
+}
+
+#background-video {
+   width: 100vw;
+   height: 100vh;
+   object-fit: cover;
+   position: fixed;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+   z-index: -1;
+ } 
+.card {
+  float: left;
+  perspective: 500px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  line-height: 300px;
+  color: #cf9640;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+.circle{
+   border: 3px solid  #cb913aca;
+   padding: 20px;
+   font-size: 20px;
+}
+.circle:hover{
+   animation-name: flip;
+   animation-duration: 1s;
+   animation-delay: 0.3s;
+  
+ 
+}
+
+.back {
+  background: white;
+  color: #cb913aca;
+  transform: rotateY( 180deg );
+  line-height: 25px;
+}
+
+.main{
+    width: 800px;
+    height: 590px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.744);
+    position: relative;
+    margin-left:90;
+    margin-top:15;
+}
+.rightside{
+right:40;
+top:15;
+width:200;
+height:290;
+background-color: transparent;
+position: absolute;
+border: 0px;
+
+}
+
+.rightside2{
+right:40;
+top:340;
+width:200;
+height:290;
+background-color: transparent;
+position: absolute;
+border: 0px;
+}
+.side{
+left:10;
+top:15;
+width:300;
+height:540;
+background-color: white;
+position: absolute;
+}
+.side .form-floating{
+   color: #cf9640;
+}
+.side .name{
+   color: #cf9640;
+}
+ .side .header{
+   color: #cf9640;
+}
+.side .Credit{
+   color: #cf9640;
+}
+.side .time{
+   width: 90%;
+   height: 60px;
+   margin-left:15px;
+   border: 0.3px solid rgba(128, 128, 128, 0.268);
+   padding: 5px; 
+   color: #cf9640;
+}
+.side .date{
+   width: 90%;
+   height: 60px;
+   margin-left:15px;
+   border: 0.3px solid rgba(128, 128, 128, 0.268);
+   padding: 5px;
+   color: #cf9640;
+}
+.rightside .cancel{
+   color:#cf9640 ;
+   background-color:white ;
+   border: 0.3px solid rgba(128, 128, 128, 0.268);
+   font-weight: bold;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   font-size: 18px;
+}
+.rightside .cancel:hover{
+   color:white;
+   background-color:#cf9640 ;
+   border: 0.3px solid rgba(128, 128, 128, 0.268);
+}
+.rightside2 .cancel2{
+   color:#cf9640 ;
+   background-color:white ;
+   border: 0.3px solid rgba(128, 128, 128, 0.268);
+   font-weight: bold;
+   padding-left: 15px;
+   padding-right: 15px;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   font-size: 18px;
+}
+.rightside2 .cancel2:hover{
+   color:white;
+   background-color:#cf9640 ;
+   border: 0.3px solid rgba(128, 128, 128, 0.268);
+}
+.side .reserve{
+   color:white;
+   background-color:#cf9640;
+   font-size: 23px;
+   border: 0.3px solid rgba(128, 128, 128, 0.268);
+   font-weight: bold;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+
+}
+.side .reserve:hover{
+   color:#cf9640 ;
+   background-color:white;
+   border: 0.3px solid rgba(128, 128, 128, 0.268);
+   
+}
+.your_res{
+   color:white;
+   background-color:#cf9640;
+   font-size: 18px;
+   border: 0.3px solid rgba(128, 128, 128, 0.268);
+   font-weight: bold;
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   position: absolute;
+   right: 20px;
+   top:15px;
+   display: none;
+
+}
+.your_res:hover{
+   color:#cf9640 !important;
+   background-color:white !important;
+   border: 0.3px solid rgba(128, 128, 128, 0.268);
+   
+}
+.reservationcardes .res_1{
+   background-color: #fff;
+   color: #cf9640;
+   text-align: center;
+   width: 150px;
+   height: 200px;
+   position: absolute;
+   right: 40px;
+   border-radius: 3%;
+   top: 80px;
+   display: none;
+}
+.reservationcardes .res_2{
+   background-color: #fff;
+   color: #cf9640;
+   text-align: center;
+   width: 150px;
+   height: 200px;
+   position: absolute;
+   right: 40px;
+   border-radius: 3%;
+   top: 300px;
+   display: none;
+   
+}
+.res_1 .cancel:hover{
+   color:white;
+   background-color:#cf9640 ;
+   border: 0.3px solid rgba(128, 128, 128, 0.268);
+}
+.res_2 .cancel:hover{
+   color:white;
+   background-color:#cf9640 ;
+   border: 0.3px solid rgba(128, 128, 128, 0.268);
+}
+.res_2 .cancel2{
+   color:#cf9640 ;
+   background-color:white ;
+   border: 0.3px solid rgba(128, 128, 128, 0.268);
+   font-weight: bold;
+   padding-left: 13px;
+   padding-right: 13px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+   font-size: 16px;
+}
+.res_1 .cancel{
+   color:#cf9640 ;
+   background-color:white ;
+   border: 0.3px solid rgba(128, 128, 128, 0.268);
+   font-weight: bold;
+   padding-left: 13px;
+   padding-right: 13px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+   font-size: 16px;
+
+}
+.main  .table,.table2 {
+   color:#cf9640  !important;
+}
+
+
+.main .fa-user{
+   color:#cf9640;
+}
+.main .fa-user:hover{
+  
+   animation-name: tada;
+   animation-duration: 1s;
+   animation-delay: 0.1s;
+  
+   
+}
+
+.main .table{
+   width: 100;
+   height: 100;
+   background: white;
+   color:#cf9640 ;
+
+} 
+.main .table2{
+   width: 340;
+   height: 100;
+   background: white;
+   color:#cf9640 ;
+
+} 
+.main  .usert1-1{
+   position: absolute;
+   left: 148;
+   font-size: 25;
+   top:35
+}
+.main  .usert1-2{
+   position: absolute;
+   left: 80;
+   font-size: 25;
+   top:100
+}
+.main  .usert1-3{
+   position: absolute;
+   left: 217;
+   font-size: 25;
+   top:100
+}
+.main  .usert1-4{
+   position: absolute;
+   left: 150;
+   font-size: 25;
+   top:175
+}
+
+
+.main  .usert2-1{
+   position: absolute;
+   left:390;
+   font-size: 25;
+   top:35
+}
+.main  .usert2-2{
+   position: absolute;
+   left: 320;
+   font-size: 25;
+   top:100
+}
+.main  .usert2-3{
+   position: absolute;
+   left: 455;
+   font-size: 25;
+   top:100
+}
+.main  .usert2-4{
+   position: absolute;
+   left: 390;
+   font-size: 25;
+   top:175
+}
+
+.main  .usert3-1{
+   position: absolute;
+   left:627;
+   font-size: 25;
+   top:35
+}
+.main  .usert3-2{
+   position: absolute;
+   left:560;
+   font-size: 25;
+   top:100
+}
+.main  .usert3-3{
+   position: absolute;
+   left:700;
+   font-size: 25;
+   top:100
+}
+.main  .usert3-4{
+   position: absolute;
+   left:627;
+   font-size: 25;
+   top:172
+}
+
+.main  .usert4-1{
+   position: absolute;
+   left: 210;
+   font-size: 25;
+   top:220
+}
+.main  .usert4-2{
+   position: absolute;
+   left: 140;
+   font-size: 25;
+   top:280
+}
+.main  .usert4-3{
+   position: absolute;
+   left: 275;
+   font-size: 25;
+   top:280
+}
+.main  .usert4-4{
+   position: absolute;
+   left: 210;
+   font-size: 25;
+   top:360
+}
+
+
+
+
+
+.main  .usert6-1{
+   position: absolute;
+   left:568;
+   font-size: 25;
+   top:220
+}
+.main  .usert6-2{
+   position: absolute;
+   left:500;
+   font-size: 25;
+   top:280
+}
+.main  .usert6-3{
+   position: absolute;
+   left: 635;
+   font-size: 25;
+   top:280
+}
+.main  .usert6-4{
+   position: absolute;
+   left:568;
+   font-size: 25;
+   top:360
+}
+
+
+.main  .usert7-1{
+   position: absolute;
+   left:120;
+   font-size: 25;
+   top:410
+}
+.main  .usert7-2{
+   position: absolute;
+   left:260;
+   font-size: 25;
+   top:410
+}
+.main  .usert7-3{
+   position: absolute;
+   left: 410;
+   font-size: 25;
+   top:410;
+}
+.main  .usert7-4{
+   position: absolute;
+   left:460;
+   font-size: 25;
+   top:470
+}
+.main  .usert7-5{
+   position: absolute;
+   left:80;
+   font-size: 25;
+   top:470;
+}
+.main  .usert7-6{
+   position: absolute;
+   left:120;
+   font-size: 25;
+   top:550
+}
+
+.main  .usert7-7{
+   position: absolute;
+   left:260;
+   font-size: 25;
+   top:550
+}
+.main  .usert7-8{
+   position: absolute;
+   left: 410;
+   font-size: 25;
+   top:550
+}
+.main  .usert8-1{
+   position: absolute;
+   left:627;
+   font-size: 25;
+   top:410
+}
+.main  .usert8-2{
+   position: absolute;
+   left:560;
+   font-size: 25;
+   top:470
+}
+.main  .usert8-3{
+   position: absolute;
+   left: 700;
+   font-size: 25;
+   top:470
+}
+.main  .usert8-4{
+   position: absolute;
+   left:627;
+   font-size: 25;
+   top:550
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-control:focus{
+   color: #cf9640;
+   background-color: #fff;
+   border-color: #cfb040;
+   outline: 0;
+   box-shadow: 0 0 0 0.25rem #cf9640cd
+}
+.side .time:focus{
+   color: #cf9640;
+   background-color: #fff;
+   border-color: #cfb040;
+   outline: 0;
+   box-shadow: 0 0 0 0.25rem #cf9640cd
+}
+.side .date:focus{
+   color: #cf9640;
+   background-color: #fff;
+   border-color: #cfb040;
+   outline: 0;
+   box-shadow: 0 0 0 0.25rem #cf9640cd
+}
+
+
+
+
+@media only screen and (max-width: 1355px) {
+   .rightside{
+       display: none;
+       
+       z-index: 10000;
+   }
+   .rightside2{
+      display: none;
+     
+      z-index: 10000;
+   
+      
+   }
+   .main{
+      margin-left: 20rem;
+   }
+
+   .your_res{
+      display: block;
+   }
+   
+ }
+ 
+@media only screen and (min-width: 769px) and (max-width: 1150px) {
+   .main{
+      margin-left: 20rem;
+      width: 600px;
+      height: 500px;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.744);
+      position: relative;
+   
+      margin-top:15;
+   }
+   .side{
+      left:30px; 
+  }
+  .main .table{
+   width: 60;
+   height: 60;
+   background: white;
+   color:#cf9640 ;
+
+} 
+.main .table2{
+   width: 280;
+   height: 60;
+   background: white;
+   color:#cf9640 ;
+
+} 
+.circle{
+   border: 3px solid  #cb913aca;
+   padding: 7px;
+   font-size: 16px;
+}
+.main  .usert1-1{
+   position: absolute;
+   left: 119;
+   font-size: 18;
+   top:40
+}
+.main  .usert1-2{
+   position: absolute;
+   left: 75;
+   font-size: 18;
+   top:85
+}
+.main  .usert1-3{
+   position: absolute;
+   left: 160;
+   font-size: 18;
+   top:85
+}
+.main  .usert1-4{
+   position: absolute;
+   left: 119;
+   font-size: 18;
+   top:130
+}
+
+
+.main  .usert2-1{
+   position: absolute;
+   left:293;
+   font-size: 18;
+   top:40
+}
+.main  .usert2-2{
+   position: absolute;
+   left: 250;
+   font-size: 18;
+   top:85
+}
+.main  .usert2-3{
+   position: absolute;
+   left: 333;
+   font-size: 18;
+   top:85
+}
+.main  .usert2-4{
+   position: absolute;
+   left: 293;
+   font-size: 18;
+   top:130
+}
+
+.main  .usert3-1{
+   position: absolute;
+   left:465;
+   font-size: 18;
+   top:40
+}
+.main  .usert3-2{
+   position: absolute;
+   left:425;
+   font-size: 18;
+   top:85
+}
+.main  .usert3-3{
+   position: absolute;
+   left:507;
+   font-size: 18;
+   top:85
+}
+.main  .usert3-4{
+   position: absolute;
+   left:465;
+   font-size: 18;
+   top:130
+}
+
+.main  .usert4-1{
+   position: absolute;
+   left: 161;
+   font-size: 18;
+   top:190
+}
+.main  .usert4-2{
+   position: absolute;
+   left: 120;
+   font-size: 18;
+   top:230
+}
+.main  .usert4-3{
+   position: absolute;
+   left: 205;
+   font-size: 18;
+   top:230
+}
+.main  .usert4-4{
+   position: absolute;
+   left: 161;
+   font-size: 18;
+   top:275
+}
+
+
+
+
+
+.main  .usert6-1{
+   position: absolute;
+   left:422;
+   font-size: 18;
+   top:190
+}
+.main  .usert6-2{
+   position: absolute;
+   left:380;
+   font-size: 18;
+   top:230
+}
+.main  .usert6-3{
+   position: absolute;
+   left: 465;
+   font-size: 18;
+   top:230
+}
+.main  .usert6-4{
+   position: absolute;
+   left:422;
+   font-size: 18;
+   top:275
+}
+
+
+.main  .usert7-1{
+   position: absolute;
+   left:100;
+   font-size: 18;
+   top:340
+}
+.main  .usert7-2{
+   position: absolute;
+   left:215;
+   font-size: 18;
+   top:340
+}
+.main  .usert7-3{
+   position: absolute;
+   left: 330;
+   font-size: 18;
+   top:340;
+}
+.main  .usert7-4{
+   position: absolute;
+   left:100;
+   font-size: 18;
+   top:425
+}
+.main  .usert7-5{
+   position: absolute;
+   left:215;
+   font-size: 18;
+   top:425;
+}
+.main  .usert7-6{
+   position: absolute;
+   left:330;
+   font-size: 18;
+   top:425
+}
+
+.main  .usert7-7{
+   position: absolute;
+   left:65;
+   font-size: 18;
+   top:380
+}
+.main  .usert7-8{
+   position: absolute;
+   left:370;
+   font-size: 18;
+   top:380
+}
+
+.main  .usert8-1{
+   position: absolute;
+   left:478;
+   font-size: 18;
+   top:340
+}
+.main  .usert8-2{
+   position: absolute;
+   left:435;
+   font-size: 18;
+   top:380;
+}
+.main  .usert8-3{
+   position: absolute;
+   left: 520;
+   font-size: 18;
+   top:380;
+}
+.main  .usert8-4{
+   position: absolute;
+   left:478;
+   font-size: 18;
+   top:425
+}
+   
+}
+
+
+
+
+@media only screen  and (max-width: 769px) {
+   .side{
+      
+      display:none;
+   }
+ }
+
+
+
+
+ 
+ 
+ 
