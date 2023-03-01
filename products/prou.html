@@ -1,0 +1,439 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="boot/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="Css/prou.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="up"></div>
+    <div class="  fs-5"><a href="#up" class="text-light arrow text-center align-items-center pt-2 rounded-3 "><i class="fa-solid fa-pizza-slice"></i></a></div>
+
+    <div class="search_feild">
+        <div class=" search_in">
+            <input type="text" class="form-control se" id="floatingInput">
+
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+            <a class="navbar-brand  logomain_color animate__animated animate__swing" href="#"><img src="images/giphy (3).gif" class="logoimage rounded-circle  "><span class="logocol">P</span>i<span class="logocol">z</span>z<span class="logocol">a</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse d-lg-flex justify-content-end  " id="navbarNavAltMarkup">
+                <div class="navbar-nav h5">
+                    <a class="nav-link  mx-2" aria-current="page" href="../home.html">Home</a>
+                    <a class="nav-link active1 mx-2" href="prou.html">product</a>
+                    <a class="nav-link mx-2" href="../reservation.html">reservation</a>
+                    <a class="nav-link  mx-2" href="conactus.html">contact us</a>
+                    <a class="nav-link   mx-2 card cart" href="chart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
+                    <a class="nav-link   mx-2 card  fav" href="favouraite.html"><i class="fa-solid fa-heart"></i></a>
+                    <a class="nav-link  mx-2 mb-2 card  search" href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section0">
+        <section class="section1 ">
+            <div class="container">
+                <div class="row row1">
+                    <div class="col-12 d-flex justify-content-center mb-5  texts3">
+                        <h2><span>our</span> products</h2>
+                    </div>
+                    <div class="col-12 d-flex  mb-3  texts3">
+                        <h2><span>italian</span>pizza</h2>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 mb-5 animate__animated animate__pulse ">
+                        <div class="card">
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse"><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/pexels-alteredsnaps-14906564.jpg" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pizza Romana </h5>
+                                <p class="card-text">The consistency: the Roman pizza is crunchy (or as Italians would say, the Roma pizza scrocchia).</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$ 15</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 mb-5">
+                        <div class="card">
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse"><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/pexels-borbely-arpad-10790638.jpg" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Neapolitan Pizza</h5>
+                                <p class="card-text">Neapolitan is the original pizza. This delicious pie dates all the way back to 18th century in Naples.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$13</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 mb-5">
+                        <div class="card">
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse"><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/pexels-kristina-paukshtite-1146760 (1).jpg" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pizza Fritta</h5>
+                                <p class="card-text">Fried pizza is commonly referred to as the “poor” sister of Neapolitan pizza. That’s because in the postwar period</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$ 18</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 mb-5">
+                        <div class="card">
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse"><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/pexels-cottonbro-studio-5898950.jpg" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pizza al Tegamino</h5>
+                                <p class="card-text">Pizza al tegamino,or pizza “al padellino” , is a specialty born in Piedmont, the region of the Turin area.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$ 18</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+        <section class="section2  section1 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex  mb-3  texts3">
+                        <h2><span>American</span> Pizza</h2>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 mb-5">
+                        <div class="card">
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse"><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/pexels-shameel-mukkath-5639548.jpg" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">California Pizza</h5>
+                                <p class="card-text">California pizza, or gourmet pizza, is known for its unusual ingredients. This pizza got its start back in the late 1970's.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$ 15</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 mb-5">
+                        <div class="card">
+
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse"><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/pexels-polina-tankilevitch-5419285.jpg" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Stuffed Pizza</h5>
+                                <p class="card-text">Stuffed pizza is an American pizza that started its way to popularity in Chicago a bit later than the deep-dish pizza.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$23</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 mb-5">
+                        <div class="card">
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse"><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/pexels-kampus-production-6605220.jpg" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Chicago Thin Crust Pizza</h5>
+                                <p class="card-text">Apart from the crispy, almost cracker-thin crust, this Chicago-style pizza features a heavily herbed.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$ 18</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 mb-5">
+                        <div class="card">
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse"><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/pexels-mikhail-nilov-9543813.jpg" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Stromboli</h5>
+                                <p class="card-text">Somewhat similar to a calzone, the American stromboli is a savory type of turnover filled with classic.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$ 18</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 mb-5">
+                        <div class="card">
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse"><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/pexels-leonardo-luz-14391214.jpg" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">New York-Style Pizza</h5>
+                                <p class="card-text">Pepperoni pizza is an American pizza variety which includes one of the country's most beloved toppings.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$ 18</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 mb-5">
+                        <div class="card">
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse"><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/pexels-polina-tankilevitch-4109128.jpg" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Pepperoni Pizza</h5>
+                                <p class="card-text">Pepperoni pizza is an American pizza variety which includes one of the country's most beloved toppings. </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$ 18</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="section3  section1 mb-5 ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex  mb-3  texts3">
+                        <h2><span>other types</span> of Pizza</h2>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 mb-5">
+                        <div class="card">
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse"><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/bagel-pizza-06222022-min-768x512.jpg.webp" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Bagel cheese Pizza</h5>
+                                <p class="card-text">A bagel pizza is a small pizza that is easy to create whenever you want. The crust of this pizza is a bagel. </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$ 15</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 mb-5">
+                        <div class="card">
+
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse "><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/breakfast-pizza-06222022-min-768x512.jpg.webp" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Breakfast Pizza</h5>
+                                <p class="card-text">reakfast pizza is an excellent option for brunch. While you may not want to eat breakfast pizza early in the morning.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$23</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6  mb-5">
+                        <div class="card">
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse"><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/dessert-pizza-06222022-min-768x512.jpg.webp" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Dessert Pizza</h5>
+                                <p class="card-text"> Traditional toppings on a dessert pizza are caramel, chocolate, any fruit, nuts, and cream..</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$ 18</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6  mb-5">
+                        <div class="card">
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse"><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/pexels-andre-saddi-13985154.jpg" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Greek Pizza</h5>
+                                <p class="card-text">Greek pizza was created by Greek immigrants who came to America and were introduced to Italian pizza.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$ 18</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6  mb-5">
+                        <div class="card">
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulset"><i class=" icon fa-regular fa-heart " onclick=removing(this)></i></div>
+                                <img src="images/sicilian-pizza-06222022-min-768x602.jpg.webp" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Sicilian Pizza</h5>
+                                <p class="card-text">Sicilian pizza is rectangular with a crust that is at least one inch thick but could be thicker. It originated in Sicily, Italy.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$ 18</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-sm-6 mb-5">
+                        <div class="card">
+                            <div class="imgdiv">
+                                <div class="hearticons animate__animated animate__pulse"><i class="fa-regular fa-heart icon" onclick=removing(this)></i></div>
+                                <img src="images/thick-crust-pizza-06222022-min-768x512.jpg.webp" class="card-img-top imgcard" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Thick Crust Pizza</h5>
+                                <p class="card-text">A thick crust is typically rolled out on a cutting board and then molded into the shape of the pan that will bake it. </p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">$ 18</li>
+                            </ul>
+                            <div class="card-body d-flex justify-content-between">
+                                <button type="button" class="btn btn buttton" onclick=addchart2(this)>+ Add to Chart</button>
+                                <button type="button" class="btn btn removebtn px-4" onclick=removecart(this)><i class="fa-solid fa-trash-can"></i> Remove</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <footer>
+            <div class="footer text-center d-flex justify-content-center align-items-center">
+                <div>
+                    <a class="navbar-brand  logomain_color mt-2" href="#"><img src="images/giphy (3).gif" class="logoimage rounded-circle  "><span class="logocol">P</span>i<span class="logocol">z</span>z<span class="logocol">a</span></a>
+                    <p>social media</p>
+                    <div class="">
+
+                        <a href="#" class="icon_footer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="icon_footer"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="icon_footer"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a class="icon_footer"> <i class="fa-brands fa-square-github"></i></a>
+
+
+                    </div>
+                    <p>powered by @omarhassan</p>
+                </div>
+            </div>
+
+        </footer>
+
+
+    </section>
+
+
+
+
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="https://github.com/fent/randexp.js/releases/download/v0.4.3/randexp.min.js"></script>
+    <script src="boot/js/bootstrap.bundle.min.js"></script>
+    <script src="Js/prou.js"></script>
+</body>
+
+</html>

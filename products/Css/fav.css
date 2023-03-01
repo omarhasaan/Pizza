@@ -1,0 +1,237 @@
+
+
+
+@import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
+body {
+  background: #eee;
+  font-family: 'Lily Script One';
+
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+  
+}
+
+header h1{
+    color: #a8b170;
+}
+header span{
+ color: #d2aa7a;
+}
+
+.navbar {
+    background-color: white !important;
+    background-color: white !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+.navbar .navbar-nav .active1{
+    color: #a8b170 !important;
+    font-weight: bold;
+}
+.navbar .container .logoimage{
+   width: 50px;
+   height: 50px;
+}
+.navbar .logocol{
+    color: #a8b170;
+    font-size: 40px;
+}
+.navbar .logomain_color{
+    color: #d2aa7a ;
+    font-size: 40px;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+.navbar .nav-link{
+    color:#d2aa7a !important;
+}
+.navbar .nav-link:hover{
+    color:#a8b170 !important;
+}
+.navbar  .fav{
+    border: 0px;
+    font-size: 30px;
+}
+.navbar .fav::before{
+    content:attr(data-before);
+    width: 17px;
+    height: 17px;
+    background-color: #d2aa7a;
+    position: absolute;
+    right: 0;
+    top:0;
+    border-radius: 50%;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.navbar .cart{
+ border: 0px;
+ font-size: 30px;
+ 
+}
+.navbar .cart::before{
+    content:attr(data-before);
+    width: 17px;
+    height: 17px;
+    background-color: #d2aa7a;
+    position: absolute;
+    right: 0;
+    top:0;
+    border-radius: 50%;
+    font-size: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+
+.section1{
+    margin-top: 100px;
+    color:#a8b170;
+}
+.section1 .texts3{
+    color: #a8b170;
+    font-size: 40px;
+}
+.section1 .texts3 span{
+    color: #d2aa7a;
+    font-size: 40px;
+}
+
+.section1  .card-title{
+    color:#d2aa7a !important;
+}
+.section1 .card{
+    overflow: hidden;
+}
+.section1 .imgdiv{
+    overflow: hidden;
+    height: 220px;
+}
+.section1 .imgdiv img{
+    background-size: cover;
+    width: 100%;
+   
+    overflow: hidden;
+}
+.section1 .imgdiv .hearticons{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    color: #a8b170;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 100;
+    right: 7;
+    top:7;
+    font-size: 20;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+.section1 .imgdiv .hearticons{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    color: #a8b170;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    z-index: 100;
+    right: 7;
+    top:7;
+    font-size: 20;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+.section1 .imgcard:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.section1 .list-group .list-group-item{
+    color:  #d2aa7a!important;
+    font-size: 25px;
+}
+.section1 .card-body button{
+    background-color:#a8b170 !important ;
+    color: white;
+}
+.section1 .card-body button:hover{
+    background-color:#1cac78 !important ;
+    color: white;
+}
+.section1 .card-body .removebtn{
+    background-color: tomato !important;
+
+}
+.section1 .card-body .removebtn:hover{
+    background-color: rgb(171, 65, 47) !important;
+
+}
+
+
+footer {
+    background-color: white;
+    bottom:0;
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    margin-top:calc(50% + 100px);
+    
+}
+.footer .logoimage{
+   width:40px;
+   height: 40px;
+}
+.footer .logocol{
+    color: #a8b170;
+    font-size: 30px;
+}
+.footer .logomain_color{
+    color: #d2aa7a ;
+    font-size: 40px;
+    
+}
+
+.footer .icon_footer{
+    color:#a8b170;
+    font-size: 20px;
+    padding: 10;
+}
+.footer .icon_footer:hover{
+    color: #cf9640;
+}
+.footer p{
+    color: #d2aa7a;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 990px) {
+    .navbar .cart::before{
+      
+        left:25px;
+        top:0px;
+       
+    }
+    .navbar .fav::before{
+        left:25px;
+        top:0px;
+    }
+  }
